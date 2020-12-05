@@ -1,0 +1,13 @@
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\bin\Debug\BLL.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\bin\Debug\BLL.pdb
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\bin\Debug\DAO.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\bin\Debug\DTO.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\bin\Debug\Utility.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\bin\Debug\DAO.pdb
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\bin\Debug\DTO.pdb
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\bin\Debug\Utility.pdb
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\obj\Debug\BLL.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\BLL\obj\Debug\BLL.pdb

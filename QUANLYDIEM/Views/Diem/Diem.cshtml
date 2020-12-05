@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Điểm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@section Scripts{
+    <script src="~/Scripts/Controller/Diem.js"></script>
+}
+<div ng-app="AppStudentManagement" ng-controller="DiemCtrl">
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title" style="padding:5px 5px 5px 5px">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold"> Quản lý điểm</span> </h4>
+                <ul class="breadcrumb breadcrumb-caret position-right">
+                    <li class="active">Chức năng</li>
+                    <li class="active">Quản lý điểm</li>
+                </ul>
+            </div>
+            <div class="heading-elements">
+                <div class="heading-btn-group">
+                    <a data-toggle="modal" href='#modal-id' class="btn btn-success has-text text-size-small btn-add">
+                        <i class="fa fa-fw fa-plus fa-2-1x"></i>
+                        <span>Thêm mới</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <div class="page-container">
+        <div class="row">
+           
+
+            <div class="panel panel-flat">
+                <div class="panel-heading" style="padding-top:10px; padding-bottom:10px">
+                    <h6 class="panel-title">DANH SÁCH ĐIỂM</h6>
+
+                </div>
+                <div class="container-fluid">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Mã bảng điểm</th>
+
+                                    <th>Mã học sinh</th>
+                                    <th>Mã lớp</th>
+                                    
+
+                                    <th>Kì học</th>
+                                    <th>Năm học</th>
+                                    <th>Điểm trung bình</th>
+
+                                    <th>Hạnh kiểm</th>
+                                    <th>Học lực</th>
+                                    <th>Danh hiệu</th>
+                                    <th>Mã giáo viên</th>
+                                   
+                                    <th style="text-align:center">Nghiệp vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @*<tr dir-paginate="item in listHocSinh|itemsPerPage:PageSize" total-items="RecordCount">*@
+                                <tr ng-repeat="item in listDiem">
+
+                                    <td>{{item.Mabangdiem}}</td>
+                                    <td>{{item.Mahocsinh}}</td>
+                                    <td>{{item.Malop}}</td>
+                                    <td>{{item.Kihoc}}</td>
+                                    <td>{{item.Namhoc}}</td>
+                                    <td>{{item.Điemtb}}</td>
+                                    <td>{{item.Hanhkiem}}</td>
+                                    <td>{{item.Hocluc}}</td>
+                                    <td>{{item.Danhhieu}}</td>
+                                    <td>{{item.Magiaovien}}</td>
+
+                                    <td class="text-center">
+                                        <ul class="icons-list action">
+
+                                            <li class="text-primary-600"><a data-toggle="modal" href="#modal-id"><i data-item="{{item.Magiaovien}}" class="icon-pencil7 btn-update"></i></a></li>
+                                            <li class="text-danger-600"><a href="#"><i data-item="{{item.Magiaovien}}" class="icon-trash btn-delete"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="padding-top: 10px; padding-bottom:10px; text-align:center">
+                            <dir-pagination-controls max-size="PageSize" direction-links="true" boundary-links="true"
+                                                     on-page-change="GetDiem()">
+                            </dir-pagination-controls>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Main -->
+            @Html.Partial("Modal/_Diem")
+        </div>
+    </div>
+</div>
+

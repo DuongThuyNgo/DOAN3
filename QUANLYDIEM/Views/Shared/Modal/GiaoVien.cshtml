@@ -1,0 +1,66 @@
+﻿<div class="modal fade" id="modal-id">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h4 class="modal-title text-left"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Tên giáo viên *</label>
+                                <input id="txtTengiaovien" ng-model="Tengiaovien" type="text" required class="form-control" placeholder="Tên giáo viên">
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Ngày sinh *</label>
+                                <input id="dateNgaysinh" ng-model="Ngaysinh" type="date" required class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Số chứng minh nhân dân *</label>
+                                <input id="txtSocmnd" ng-model="Socmnd" type="text" required class="form-control" placeholder="Số chứng minh nhân dân">
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Quê quán *</label>
+                                <input id="txtQuequan" ng-model="Quequan" type="text" required class="form-control" placeholder="Quê quán">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Số điện thoại *</label>
+                                <input id="txtSodienthoai" ng-model="Sodienthoai" type="text" required class="form-control" placeholder="Số điện thoại">
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Giới tính *</label><br>
+                                <input ng-model="Gioitinh" type="radio" value="Nam" checked><span>Nam</span>
+                                <input ng-model="Gioitinh" type="radio" value="Nữ" class="ml-md-2"><span>Nữ</span>
+                            </div>
+
+                        </div>
+                    </div>
+                   
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <hr />
+                <button type="submit" id="btnSubmit" class="btn btn-primary"><i class="fa fa-floppy-o"></i> <span></span></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-ban"></i> Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+</div>

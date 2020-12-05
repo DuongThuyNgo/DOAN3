@@ -1,0 +1,125 @@
+﻿@{
+    ViewBag.Title = "Giáo Viên";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@section Scripts{
+    <script src="~/Scripts/Controller/GiaoVien.js"></script>
+}
+<div ng-app="AppStudentManagement" ng-controller="GiaoVienCtrl">
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title" style="padding:5px 5px 5px 5px">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold"> Quản lý giáo viên</span> </h4>
+                <ul class="breadcrumb breadcrumb-caret position-right">
+                    <li class="active">Chức năng</li>
+                    <li class="active">Quản lý danh sách giáo viên</li>
+                </ul>
+            </div>
+            <div class="heading-elements">
+                <div class="heading-btn-group">
+                    <a data-toggle="modal" href='#modal-id' class="btn btn-success has-text text-size-small btn-add">
+                        <i class="fa fa-fw fa-plus fa-2-1x"></i>
+                        <span>Thêm mới</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <div class="page-container">
+        <div class="row">
+            @*<div class="panel panel-flat">
+                <div class="panel-heading" style="padding-top:10px; padding-bottom:10px">
+                    <h6 class="panel-title">TÌM KIẾM THÔNG TIN</h6>
+                </div>
+                <div class="container-fluid">
+                    <div class="form-group" style="margin-bottom :5px">
+                        <div class="row">
+                            <div class="col-md-2" style="text-align:right">
+                                <label>Tên giáo viên</label>
+                            </div>
+                            <div class="col-md-6" style="text-align:left">
+                                <input id="txtsrchTengiaovien" ng-model="srchTengiaovien" type="text" class="form-control" placeholder="Tên giáo viên">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom :5px">
+                        <div class="row">
+                            <div class="col-md-2" style="text-align:right">
+                                <label>Quê quán</label>
+                            </div>
+                            <div class="col-md-6" style="text-align:left">
+                                <input id="txtsrchQuequan" ng-model="srchQuequan" type="text" class="form-control" placeholder="Quê quán">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-4" style="text-align:left">
+                                <button ng-click="GetHocSinh(PageIndex)" type="button" class="btn btn-primary"><i class="fa fa-search"></i> <span>Tìm kiếm</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+
+            <div class="panel panel-flat">
+                <div class="panel-heading" style="padding-top:10px; padding-bottom:10px">
+                    <h6 class="panel-title">DANH SÁCH GIÁO VIÊN</h6>
+
+                </div>
+                <div class="container-fluid">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Mã giáo viên</th>
+                                    <th>Tên giáo viên</th>
+                                    
+                                    <th>Ngày sinh</th>
+                                    <th>Giới tính</th>
+                                    <th>Quê quán</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Số chứng minh nhân dân</th>
+                                    <th style="text-align:center">Nghiệp vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @*<tr dir-paginate="item in listHocSinh|itemsPerPage:PageSize" total-items="RecordCount">*@
+                                <tr ng-repeat="item in listGiaoVien">
+                                    <td>{{item.Magiaovien}}</td>
+                                    <td>{{item.Tengiaovien}}</td>
+                                   
+                                    <td>{{item.Ngaysinh|filterdate|date:'dd/MM/yyyy'}}</td>
+                                    <td>{{item.Gioitinh}}</td>
+                                    <td>{{item.Quequan}}</td>
+                                    <td>{{item.Sodienthoai}}</td>
+                                    <td>{{item.Socmnd}}</td>
+                                    <td class="text-center">
+                                        <ul class="icons-list action">
+                                          
+                                            <li class="text-primary-600"><a data-toggle="modal" href="#modal-id"><i data-item="{{item.Magiaovien}}" class="icon-pencil7 btn-update"></i></a></li>
+                                            <li class="text-danger-600"><a href="#"><i data-item="{{item.Magiaovien}}" class="icon-trash btn-delete"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="padding-top: 10px; padding-bottom:10px; text-align:center">
+                            <dir-pagination-controls max-size="PageSize" direction-links="true" boundary-links="true"
+                                                     on-page-change="GetGiaoVien()">
+                            </dir-pagination-controls>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /Main -->
+            @Html.Partial("Modal/_GiaoVien")
+        </div>
+    </div>
+</div>
+

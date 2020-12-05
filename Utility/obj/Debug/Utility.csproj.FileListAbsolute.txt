@@ -1,0 +1,5 @@
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\Utility\bin\Debug\Utility.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\Utility\bin\Debug\Utility.pdb
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\Utility\obj\Debug\Utility.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\Utility\obj\Debug\Utility.pdb

@@ -1,0 +1,107 @@
+﻿<div class="modal fade" id="modal-id">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h4 class="modal-title text-left"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-1">
+                               
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i>Mã học sinh *</label>
+                                <select ng-repeat="i in listHocSinh">
+                                    <option ng-model="Mahocsinh" value="{{i.Mahocsinh}}">{{i.Mahocsinh}}</option>
+
+                                </select>
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i>Mã lớp *</label>
+                                <select ng-repeat="i in listLopHoc">
+                                    <option ng-model="Malop" value="{{i.Malop}}">{{i.Malop}}</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i>Kì học *</label>
+                                <input ng-model="Kihoc" type="radio" value="1" checked><span>1</span>
+                                <input ng-model="Kihoc" type="radio" value="2" class="ml-md-2"><span>2</span>
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Năm học *</label>
+                                <input id="txtNamhoc" ng-model="Namhoc" type="text" required class="form-control" placeholder="Năm học">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Hạnh kiểm *</label>
+                                <select>
+                                    <option value="Tốt">Tốt</option>
+                                    <option value="Khá">Khá</option>
+                                    <option value="Trung bình">Trung bình</option>
+                                    <option value="Yếu">Yếu</option>
+                                </select>
+                            </div>
+                            <div class="col-md-5">
+                                <label><i class="icon-pencil5"></i> Học lực *</label><br>
+                                <select>
+                                    <option value="Giỏi">Giỏi</option>
+                                    <option value="Khá">Khá</option>
+                                    <option value="Trung bình">Trung bình</option>
+                                    <option value="Yếu">Yếu</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-1">
+                                </div>
+                                <div class="col-md-5">
+                                    <label><i class="icon-pencil5"></i> Danh hiệu *</label>
+                                    <select id="slPageSize" ng-model="PageSize">
+                                        <option value="Học sinh Giỏi">Học sinh Giỏi</option>
+                                        <option value="Học sinh Khá">Học sinh Khá</option>
+                                        <option value="Học sinh Trung bình">Học sinh Trung bình</option>
+                                        <option value="Học sinh Yếu">Học sinh Yếu</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-5">
+                                    <label><i class="icon-pencil5"></i> Mã giáo viên*</label><br>
+                                    <select ng-repeat="i in listGiaoVien">
+                                        <option ng-model="Magiaovien" value="{{i.Magiaovien}}">{{i.Magiaovien}}</option>
+
+                                    </select>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <hr />
+                <button type="submit" id="btnSubmit" class="btn btn-primary"><i class="fa fa-floppy-o"></i> <span></span></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-ban"></i> Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+</div>

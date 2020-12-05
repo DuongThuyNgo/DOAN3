@@ -1,0 +1,5 @@
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DTO\bin\Debug\DTO.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DTO\bin\Debug\DTO.pdb
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DTO\obj\Debug\DTO.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DTO\obj\Debug\DTO.pdb

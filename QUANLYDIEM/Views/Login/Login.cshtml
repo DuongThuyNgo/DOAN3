@@ -1,0 +1,73 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trường THPT Trần Hưng Đạo | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/Assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="~/Assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/Assets/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <script src="~/Scripts/angular.min.js"></script>
+    <!-- jQuery -->
+    <script src="~/Scripts/jquery/jquery.3.4.1.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/Assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/Assets/dist/js/adminlte.min.js"></script>
+    <script src="~/Assets/plugins/overlayScrollbars/js/OverlayScrollbars.min.js"></script>
+    <script src="~/Scripts/Controller/Login.js"></script>
+</head>
+<body ng-app="AppDiemHocSinh" ng-controller="LoginCtrl" class="hold-transition login-page" id="background">
+    <div class="login-logo">
+        <a><b>Trường THPT Trần Hưng Đạo</b></a>
+    </div>
+    <div class="login-box">
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Đăng Nhập</p>
+
+                <form>
+                    <div class=" mb-3">
+                        <input ng-model="us" type="text" class="form-control" placeholder="Tên tài khoản">
+
+                    </div>
+                    <div class=" mb-3">
+                        <input ng-model="pw" type="password" class="form-control" placeholder="Password">
+
+                    </div>
+
+
+                    <!-- /.col -->
+                    <div>
+                        <button type="submit" class="btn-xl btn-primary btn-block"  ng-click="us,pw">Đăng Nhập</button>
+                    </div>
+                    <!-- /.col -->
+
+                </form>
+
+
+                <!-- /.social-auth-links -->
+
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    <!-- /.login-box -->
+
+</body>
+</html>
+

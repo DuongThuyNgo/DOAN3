@@ -1,0 +1,9 @@
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\bin\Debug\DAO.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\bin\Debug\DAO.pdb
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\bin\Debug\DTO.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\bin\Debug\DTO.pdb
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\obj\Debug\DAO.dll
+C:\Users\DUONG THUY NGO\source\repos\QUANLYDIEM\DAO\obj\Debug\DAO.pdb

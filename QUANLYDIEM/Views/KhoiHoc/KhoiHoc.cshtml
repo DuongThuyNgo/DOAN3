@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+@section Scripts{
+    <script src="~/Scripts/Controller/KhoiHoc.js"></script>
+}
+
+<div  ng-app="AppStudentManagement" ng-controller="KhoiHocCtrl">
+    <!-- Page header -->
+    <div class="page-header">
+        <div class="page-header-content">
+            <div class="page-title" style="padding:5px 5px 5px 5px">
+                <h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold"> Quản lý khối học</span> </h4>
+                <ul class="breadcrumb breadcrumb-caret position-right">
+                    <li class="active">Chức năng</li>
+                    <li class="active">Quản lý danh sách khối học</li>
+                </ul>
+            </div>
+            <div class="heading-elements">
+                <div class="heading-btn-group">
+                    <a data-toggle="modal" href='#modal-id' class="btn btn-success has-text text-size-small btn-add">
+                        <i class="fa fa-fw fa-plus fa-2-1x"></i>
+                        <span>Thêm mới</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <div class="page-container">
+        <div class="row">
+
+            <div class="panel panel-flat">
+                <div class="panel-heading" style="padding-top:10px; padding-bottom:10px">
+                    <h6 class="panel-title">DANH SÁCH KHỐI HỌC</h6>
+                    
+                </div>
+                <div class="container-fluid" >
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Mã khối học</th>
+                                    <th>Tên khối học</th>
+                                    <th style="text-align:center">Nghiệp vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in listKhoiHoc" id="{{item.Makhoihoc}}"
+                                    ng-class-even="'even'" ng-class-odd="'odd'">
+
+                                    <td>{{item.Makhoihoc}}</td>
+                                    <td>{{item.Tenkhoihoc}}</td>
+                                    <td class="text-center">
+                                        <ul class="icons-list action">
+
+                                            <li class="text-primary-600"><a data-toggle="modal"   href="#modal-id"><i class="icon-pencil7 btn-update" ng-click="Update(item)"></i></a></li>
+                                            <li class="text-danger-600"><a href="#" ><i ng-click="Delete(item)" class="icon-trash btn-delete"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="padding-top: 10px; padding-bottom:10px; text-align:center">
+                            <dir-pagination-controls max-size="PageSize" direction-links="true" boundary-links="true"
+                                                     on-page-change="GetKhoiHoc()">
+                            </dir-pagination-controls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Main -->
+            @Html.Partial("Modal/_KhoiHoc")
+        </div>
+    </div>
+</div>
+
